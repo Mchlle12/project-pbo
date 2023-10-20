@@ -37,13 +37,18 @@ public class fromregister extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         user = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
 
         jLabel6.setText("jLabel6");
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setText("Register");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 20, -1, -1));
 
         jLabel2.setText("Masukkan Nama Anda");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
         jTextField1.setText("Nama");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -51,16 +56,22 @@ public class fromregister extends javax.swing.JPanel {
                 jTextField1ActionPerformed(evt);
             }
         });
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, 142, -1));
 
         jLabel3.setText("Masukkan Password Anda");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 116, -1, -1));
 
         jTextField2.setText("Password");
+        add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 141, 142, -1));
 
         jLabel4.setText("Masukkan Password Kembali");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 179, -1, -1));
 
         jTextField3.setText("Password");
+        add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 204, 142, -1));
 
         jLabel5.setText("user");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 242, -1, -1));
 
         user.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "admin", "customer", "pembayaran", "" }));
         user.addActionListener(new java.awt.event.ActionListener() {
@@ -68,59 +79,13 @@ public class fromregister extends javax.swing.JPanel {
                 userActionPerformed(evt);
             }
         });
+        add(user, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 262, -1, -1));
 
         jButton1.setText("Submit");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 300, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel2)
-                        .addComponent(jTextField1)
-                        .addComponent(jLabel3)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                        .addComponent(jLabel4)
-                        .addComponent(jTextField3)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addGap(17, 17, 17)))
-                    .addComponent(jLabel5)
-                    .addComponent(user, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(54, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(user, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/level.jpg"))); // NOI18N
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, -70, -1, 680));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -140,6 +105,7 @@ public class fromregister extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
